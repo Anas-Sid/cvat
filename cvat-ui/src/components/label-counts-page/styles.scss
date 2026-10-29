@@ -13,5 +13,36 @@
 .cvat-label-counts-inner {
     background: white;
     border-radius: $grid-unit-size;
-    padding: $grid-unit-size * 2 $grid-unit-size * 4;
+    padding: $grid-unit-size * 3 $grid-unit-size * 4;
+
+    .ant-typography {
+        margin-bottom: 0;
+    }
+}
+
+.cvat-label-counts-stats {
+    margin: $grid-unit-size * 2 0;
+
+    .ant-statistic-content {
+        font-size: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.cvat-label-counts-empty-labels {
+    margin-bottom: $grid-unit-size * 2;
+}
+
+.cvat-label-counts-controls {
+    margin-bottom: $grid-unit-size * 2;
+}
+
+.cvat-label-counts-filter {
+    width: 100%;
+}
+
+.cvat-label-counts-chart {
+    position: relative;
 }
