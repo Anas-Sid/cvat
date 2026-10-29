@@ -57,7 +57,10 @@ computed directly from `instances_val2017` for the same 500 images.
 
 ## Changes to this plan
 
-_(Filled in as work happens, with the time and the reason.)_
+- **17:15** Endpoint uses 3 grouped queries, not 1: shapes, tracks and tags are stored in three
+  tables. Still no annotation rows are loaded into Python.
+- **17:17** The 403 check uses a new `user3` instead of `user2`. `user2` had been made assignee of
+  Task #1, which correctly gives read access.
 
 ## Decision record
 
